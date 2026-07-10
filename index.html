@@ -1,104 +1,32 @@
-<!doctype html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="民生数治惠家：面向社区居民、网格员与管理者的数字化服务平台项目展示。">
-    <title>民生数治惠家｜项目展示</title>
-    <script type="module" crossorigin src="./assets/index-DpP1HDZB.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-uh1LxwU2.css">
-  </head>
-  <body>
-    <a class="skip-link" href="#main-content">跳至主要内容</a>
-    <header class="site-header">
-      <a class="brand" href="#intro" aria-label="返回民生数治惠家首页">
-        <span class="brand-mark" aria-hidden="true">M</span>
-        <span>民生数治惠家</span>
-      </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">菜单</button>
-      <nav id="site-nav" class="site-nav" aria-label="页内导航">
-        <a href="#intro">项目介绍</a>
-        <a href="#features">功能展示</a>
-        <a href="#architecture">技术架构</a>
-        <a href="#screenshots">界面预览</a>
-      </nav>
-    </header>
-
-    <main id="main-content">
-      <section id="intro" class="hero section-shell" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow" id="project-eyebrow"></p>
-          <h1 id="hero-title"></h1>
-          <p class="hero-summary" id="project-summary"></p>
-          <div class="badge-row" id="project-badges" aria-label="项目关键词"></div>
-          <a class="primary-action" href="#features">查看核心功能 <span aria-hidden="true">↓</span></a>
-        </div>
-        <div class="hero-visual" aria-label="居民端与网格员端协同示意">
-          <article class="device-card device-card--resident">
-            <span class="device-label">居民端</span>
-            <strong>社区服务</strong>
-            <span>签到 · 活动 · 积分</span>
-            <i class="device-orb" aria-hidden="true"></i>
-          </article>
-          <article class="device-card device-card--grid">
-            <span class="device-label">网格员端</span>
-            <strong>治理协同</strong>
-            <span>走访 · 预警 · 工单</span>
-            <i class="device-orb" aria-hidden="true"></i>
-          </article>
-          <span class="flow-line" aria-hidden="true"></span>
-        </div>
-      </section>
-
-      <section id="features" class="section-shell section-block" aria-labelledby="features-title">
-        <div class="section-heading">
-          <p class="eyebrow">两个使用入口</p>
-          <h2 id="features-title">居民办事更方便，网格员处理事情更清楚</h2>
-          <p>居民端主要做签到、活动和积分；网格员端集中展示走访、预警和工单，演示时可以直接切换查看。</p>
-        </div>
-        <div class="role-tabs" role="tablist" aria-label="功能角色">
-          <button type="button" role="tab" aria-selected="true" aria-controls="role-panel" id="resident-tab" data-role="resident">居民端服务</button>
-          <button type="button" role="tab" aria-selected="false" aria-controls="role-panel" id="grid-tab" data-role="grid">网格员治理</button>
-        </div>
-        <div id="role-panel" class="role-panel" role="tabpanel" aria-labelledby="resident-tab" tabindex="0"></div>
-        <div class="support-grid" aria-label="支撑能力">
-          <article class="support-card">
-            <span class="support-index">01</span>
-            <h3>社区管理后台</h3>
-            <p>可以统一查看用户、活动、积分规则、工单和预警信息，方便做日常管理。</p>
-          </article>
-          <article class="support-card">
-            <span class="support-index">02</span>
-            <h3>预警规则</h3>
-            <p>初版采用简单规则：老人连续 3 天未签到提示黄色预警，连续 7 天提示红色预警。</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="architecture" class="section-shell section-block architecture-section" aria-labelledby="architecture-title">
-        <div class="section-heading">
-          <p class="eyebrow">技术架构</p>
-          <h2 id="architecture-title">小程序、后台和服务是怎么连起来的</h2>
-          <p>目前前端使用 mock 数据，方便在答辩时直接演示；后端保留了后续接入数据库和接口的位置。</p>
-        </div>
-        <div class="architecture-flow" id="architecture-flow" aria-label="系统架构分层"></div>
-        <div class="tech-stack" id="tech-stack" aria-label="技术栈"></div>
-      </section>
-
-      <section id="screenshots" class="section-shell section-block" aria-labelledby="screenshots-title">
-        <div class="section-heading">
-          <p class="eyebrow">界面预览</p>
-          <h2 id="screenshots-title">关键页面，一眼说明产品体验</h2>
-          <p>以下为截图占位区。将真实图片路径填入内容配置后，页面会自动替换为项目截图。</p>
-        </div>
-        <div class="screenshot-grid" id="screenshot-grid"></div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <span class="brand-mark" aria-hidden="true">M</span>
-      <p>民生数治惠家 · 微信小程序项目展示</p>
-      <a href="#intro">返回顶部 ↑</a>
-    </footer>
-  </body>
-</html>
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))o(i);new MutationObserver(i=>{for(const n of i)if(n.type==="childList")for(const c of n.addedNodes)c.tagName==="LINK"&&c.rel==="modulepreload"&&o(c)}).observe(document,{childList:!0,subtree:!0});function r(i){const n={};return i.integrity&&(n.integrity=i.integrity),i.referrerPolicy&&(n.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?n.credentials="include":i.crossOrigin==="anonymous"?n.credentials="omit":n.credentials="same-origin",n}function o(i){if(i.ep)return;i.ep=!0;const n=r(i);fetch(i.href,n)}})();const a={project:{eyebrow:"社区服务微信小程序项目",headline:"把居民服务和网格员日常工作放到一个小程序项目里。",summary:"居民可以签到、报名活动、查看积分；网格员可以安排走访、处理工单和查看关怀提醒。",badges:["居民服务","网格治理","积分激励","规则预警"]},roles:[{id:"resident",label:"居民端",caption:"把日常服务做得更贴近社区生活。",features:[{icon:"01",title:"每日签到",text:"完成日常签到并积累社区积分。"},{icon:"02",title:"活动报名",text:"查看社区活动并在线报名参与。"},{icon:"03",title:"积分兑换",text:"查询积分余额，兑换社区服务与商品。"},{icon:"04",title:"公告通知",text:"及时获取社区动态与服务信息。"}]},{id:"grid",label:"网格员端",caption:"把被动接单转为有序、主动的关怀处置。",features:[{icon:"01",title:"任务看板",text:"聚合待办任务与社区服务进度。"},{icon:"02",title:"走访签到",text:"记录网格走访与现场服务情况。"},{icon:"03",title:"工单处理",text:"处理问题上报，记录每项工单的进度。"},{icon:"04",title:"高风险预警",text:"查看需要重点关怀的老人预警信息。"}]}],architecture:[{layer:"服务触点",items:["居民端微信小程序","网格员端微信小程序","Vue 管理后台"]},{layer:"业务中枢",items:["Spring Boot REST API","用户、活动、积分、工单与预警模型"]},{layer:"数据与预警",items:["MySQL / Redis 演进规划","Python 规则预警服务"]}],techStack:["微信小程序","Vue","Spring Boot","Python","Docker Compose","MySQL","Redis"],screenshots:[{title:"居民首页",tag:"服务入口",description:"活动、签到、积分与公告的入口页。",image:""},{title:"积分商城",tag:"激励体系",description:"展示可用积分、分类与兑换商品。",image:""},{title:"网格员看板",tag:"任务协同",description:"聚合走访、待办任务与处置进度。",image:""},{title:"预警与工单",tag:"主动关怀",description:"呈现高风险预警和工单处理流程。",image:""}]},s=e=>document.getElementById(e);function d(e){return e.map(t=>`<span class="badge">${t}</span>`).join("")}function l(e){const t=s("role-panel");t.setAttribute("aria-labelledby",`${e.id}-tab`),t.innerHTML=`
+    <div class="role-panel-heading">
+      <span class="role-dot" aria-hidden="true"></span>
+      <p>${e.caption}</p>
+    </div>
+    <div class="feature-grid">
+      ${e.features.map(r=>`
+        <article class="feature-card">
+          <span class="feature-index">${r.icon}</span>
+          <h3>${r.title}</h3>
+          <p>${r.text}</p>
+        </article>
+      `).join("")}
+    </div>
+  `}function p(){s("architecture-flow").innerHTML=a.architecture.map((e,t)=>`
+    <article class="architecture-layer">
+      <span class="architecture-number">0${t+1}</span>
+      <div>
+        <h3>${e.layer}</h3>
+        <div class="architecture-items">${e.items.map(r=>`<span>${r}</span>`).join("")}</div>
+      </div>
+    </article>
+  `).join(""),s("tech-stack").innerHTML=a.techStack.map(e=>`<span>${e}</span>`).join("")}function u(){s("screenshot-grid").innerHTML=a.screenshots.map((e,t)=>`
+    <article class="screenshot-card">
+      <div class="screen-frame">
+        ${e.image?`<img src="${e.image}" alt="${e.title}截图">`:`<div class="screen-placeholder"><span>SCREEN ${String(t+1).padStart(2,"0")}</span><i aria-hidden="true"></i><b>替换真实截图</b></div>`}
+      </div>
+      <p class="screen-tag">${e.tag}</p>
+      <h3>${e.title}</h3>
+      <p>${e.description}</p>
+    </article>
+  `).join("")}function f(){const e=document.querySelectorAll("[data-role]");e.forEach(t=>t.addEventListener("click",()=>{e.forEach(r=>r.setAttribute("aria-selected",String(r===t))),l(a.roles.find(r=>r.id===t.dataset.role))}))}function m(){const e=document.querySelector(".menu-toggle"),t=s("site-nav");e.addEventListener("click",()=>{const r=e.getAttribute("aria-expanded")==="true";e.setAttribute("aria-expanded",String(!r)),t.dataset.open=String(!r)}),t.querySelectorAll("a").forEach(r=>r.addEventListener("click",()=>{e.setAttribute("aria-expanded","false"),t.dataset.open="false"}))}s("project-eyebrow").textContent=a.project.eyebrow;s("hero-title").textContent=a.project.headline;s("project-summary").textContent=a.project.summary;s("project-badges").innerHTML=d(a.project.badges);l(a.roles[0]);p();u();f();m();
