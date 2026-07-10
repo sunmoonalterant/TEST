@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="民生数治惠家：面向社区居民、网格员与管理者的数字化服务平台项目展示。">
+    <title>民生数治惠家｜项目展示</title>
+    <script type="module" crossorigin src="./assets/index-DpP1HDZB.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-uh1LxwU2.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳至主要内容</a>
+    <header class="site-header">
+      <a class="brand" href="#intro" aria-label="返回民生数治惠家首页">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span>民生数治惠家</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">菜单</button>
+      <nav id="site-nav" class="site-nav" aria-label="页内导航">
+        <a href="#intro">项目介绍</a>
+        <a href="#features">功能展示</a>
+        <a href="#architecture">技术架构</a>
+        <a href="#screenshots">界面预览</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section id="intro" class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow" id="project-eyebrow"></p>
+          <h1 id="hero-title"></h1>
+          <p class="hero-summary" id="project-summary"></p>
+          <div class="badge-row" id="project-badges" aria-label="项目关键词"></div>
+          <a class="primary-action" href="#features">查看核心功能 <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-visual" aria-label="居民端与网格员端协同示意">
+          <article class="device-card device-card--resident">
+            <span class="device-label">居民端</span>
+            <strong>社区服务</strong>
+            <span>签到 · 活动 · 积分</span>
+            <i class="device-orb" aria-hidden="true"></i>
+          </article>
+          <article class="device-card device-card--grid">
+            <span class="device-label">网格员端</span>
+            <strong>治理协同</strong>
+            <span>走访 · 预警 · 工单</span>
+            <i class="device-orb" aria-hidden="true"></i>
+          </article>
+          <span class="flow-line" aria-hidden="true"></span>
+        </div>
+      </section>
+
+      <section id="features" class="section-shell section-block" aria-labelledby="features-title">
+        <div class="section-heading">
+          <p class="eyebrow">两个使用入口</p>
+          <h2 id="features-title">居民办事更方便，网格员处理事情更清楚</h2>
+          <p>居民端主要做签到、活动和积分；网格员端集中展示走访、预警和工单，演示时可以直接切换查看。</p>
+        </div>
+        <div class="role-tabs" role="tablist" aria-label="功能角色">
+          <button type="button" role="tab" aria-selected="true" aria-controls="role-panel" id="resident-tab" data-role="resident">居民端服务</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="role-panel" id="grid-tab" data-role="grid">网格员治理</button>
+        </div>
+        <div id="role-panel" class="role-panel" role="tabpanel" aria-labelledby="resident-tab" tabindex="0"></div>
+        <div class="support-grid" aria-label="支撑能力">
+          <article class="support-card">
+            <span class="support-index">01</span>
+            <h3>社区管理后台</h3>
+            <p>可以统一查看用户、活动、积分规则、工单和预警信息，方便做日常管理。</p>
+          </article>
+          <article class="support-card">
+            <span class="support-index">02</span>
+            <h3>预警规则</h3>
+            <p>初版采用简单规则：老人连续 3 天未签到提示黄色预警，连续 7 天提示红色预警。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="architecture" class="section-shell section-block architecture-section" aria-labelledby="architecture-title">
+        <div class="section-heading">
+          <p class="eyebrow">技术架构</p>
+          <h2 id="architecture-title">小程序、后台和服务是怎么连起来的</h2>
+          <p>目前前端使用 mock 数据，方便在答辩时直接演示；后端保留了后续接入数据库和接口的位置。</p>
+        </div>
+        <div class="architecture-flow" id="architecture-flow" aria-label="系统架构分层"></div>
+        <div class="tech-stack" id="tech-stack" aria-label="技术栈"></div>
+      </section>
+
+      <section id="screenshots" class="section-shell section-block" aria-labelledby="screenshots-title">
+        <div class="section-heading">
+          <p class="eyebrow">界面预览</p>
+          <h2 id="screenshots-title">关键页面，一眼说明产品体验</h2>
+          <p>以下为截图占位区。将真实图片路径填入内容配置后，页面会自动替换为项目截图。</p>
+        </div>
+        <div class="screenshot-grid" id="screenshot-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span class="brand-mark" aria-hidden="true">M</span>
+      <p>民生数治惠家 · 微信小程序项目展示</p>
+      <a href="#intro">返回顶部 ↑</a>
+    </footer>
+  </body>
+</html>
